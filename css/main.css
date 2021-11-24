@@ -106,3 +106,42 @@ main nav {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
+/*form*/
+
+svg {
+	fill: rgb(242, 242, 242);
+	height: 2rem;
+	width: 2rem;
+}
+
+input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+input[type="radio"] + svg {
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+input + svg {
+	cursor: pointer;
+}
+
+input[class="agradable"]:hover + svg,
+input[class="agradable"]:checked + svg,
+input[class="agradable"]:focus + svg {
+	fill: rgb(0, 204, 79);
+}
+
+input[class="poco"]:hover + svg,
+input[class="poco"]:checked + svg,
+input[class="poco"]:focus + svg {
+	fill: rgb(229, 132, 0);
+}
+
+input[class="mucho"]:hover + svg,
+input[class="mucho"]:checked + svg,
+input[class="mucho"]:focus + svg {
+	fill: rgb(239, 42, 16);
+}
