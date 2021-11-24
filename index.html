@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/w3pro.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Pasear por San Luis</title>
         <script src="js/nav.js" defer></script>
         <script src="js/sliders.js" defer></script>
     </head>
     <body>
-        <header id="id_header_contenedor" class="w3-container w3-row header_contenedor">
+        <header id="id_header_contenedor" class="w3-row header_contenedor">
             <!--<section id="id_intro" class="intro_animancion_container">-->
                 <!--<img class="intro_nube w3-animate-top" src="images/png/intro_nube.png" alt="caricatura nube grande a lo lejos">-->
                 <!--<img class="intro_montaña_iz w3-animate-left" src="images/png/intro_montaña_izq.png" alt="caricatura montaña a la izquierda">-->
@@ -30,22 +31,26 @@
                 </div>
             </section>
         </header>
-        <main id="inicio" class="w3-container w3-row inicio_contenedor">
-            <nav id="id_nav" class="w3-sidebar w3-bar-block nav_contenedor">
-                <button class="w3-button" type="menu" onclick="w3-open()">
-                    <img src="images/png/icono_auto_color+sombra.png" sizes="width:1.5em;">
-                </button>
-                <a class="#" href="#sierras">Sierras</a>
-                <a class="#" href="#cascadas">Cascadas</a>
-                <a class="#" href="#espejos">Espejos de agua</a>
-                <a class="#" href="#salinas">Salinas del Bebedero</a>
-                <a class="#" href="#quijadas">Sierra de las Quijadas</a>
-                <a class="#" href="#playa">Playa de Piscu Yaco</a>
-                <a class="#" href="#Arquitectura">Flora y fauna</a>
-                <a class="#" href="#comida">Comida típica</a>
-                <a class="#" href="#form">Contanos tu experiencia</a>
+        <main id="inicio" class="inicio_contenedor">
+            <input id="nav_activador" class="nav_activador" type="checkbox" name="checkbox" unchecked >
+            <nav id="id_nav" class="nav_contenedor" >
+                <ul class="lista_nav_menu" style="list-style: none; margin: 0; padding: 0;">
+                    <li> <a class="#" href="#sierras">Sierras</a> </li>
+                    <li> <a class="#" href="#cascadas">Cascadas</a> </li>
+                    <li> <a class="#" href="#espejos">Espejos de agua</a> </li>
+                    <li> <a class="#" href="#salinas">Salinas del Bebedero</a> </li>
+                    <li> <a class="#" href="#quijadas">Sierra de las Quijadas</a> </li>
+                    <li> <a class="#" href="#playa">Playa de Piscu Yaco</a> </li>
+                    <li> <a class="#" href="#arquitectura">Arquitectura</a> </li>
+                    <li> <a class="#" href="#flora">Flora y fauna</a> </li>
+                    <li> <a class="#" href="#comida">Comida típica</a> </li>
+                    <li> <a class="#" href="#form">Contanos tu experiencia</a> </li>
+                </ul>
             </nav>
-            <section class="w3-container fotos_contenedor">
+            <label for="nav_activador" class="etiqueta_nav_activador">
+                <img src="images/png/icono_auto_color+sombra.png" style="width: 2em;">
+            </label>
+            <section class="fotos_contenedor">
                 <article id="sierras" class="articulo_sierras">
                     <h2 class="w3-center w3-panel">Sierras</h2>
                     <div class="w3-content slider_container">
@@ -171,7 +176,7 @@
                 </article>
 
                 <article id="salinas" class="articulo_salinas">
-                    <h2 class="w3-center w3-panel">Salinas</h2>
+                    <h2 class="w3-center w3-panel">Salinas del Bebedero</h2>
                     <div class="w3-content slider_container">
 
                         <div class="w3-display-container img_slider_salinas">
@@ -200,7 +205,7 @@
                 </article>
 
                 <article id="quijadas" class="articulo_quijadas">
-                    <h2 class="w3-center w3-panel">Quijadas</h2>
+                    <h2 class="w3-center w3-panel">Sierra de las Quijadas</h2>
                     <div class="w3-content slider_container">
 
                         <div class="w3-display-container img_slider_quijadas">
@@ -436,7 +441,7 @@
 
                 </article>
             </section>
-            <section class="w3-container form_contenedor">
+            <section class="form_contenedor">
                 
             </section>
         </main>
