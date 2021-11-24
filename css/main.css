@@ -1,0 +1,37 @@
+main {
+    background: var(--grad_celeste_blanco);
+    padding: 0;
+    margin: 0;
+}
+.fotos_contenedor {
+    padding: 0;
+    height: 100%;
+}
+.inicio_contenedor {
+    width: 100%;
+    max-height: 15rem;
+    padding: 0;
+    margin: 0;
+}
+.img_slider {
+    display: none;
+}
+.w3-display-bottomleft {
+    color: var(--sombra_verde);
+    font-weight: bold;
+    background: rgba(204, 249, 255, 0.5);
+    text-shadow: 0px -1px 1px var(--primario_verde);
+}
+.chevrons_izq_der {
+    color: var(--sombra_verde);
+    background: rgba(121, 181, 189, 0.5);
+    text-shadow: 0.8px 0.8px 1px #193038;
+    /*border-radius: 50%;*/
+    /*padding: 0.5em;*/
+}
+article {
+    position: relative;
+}
+article h2 {
+    font-weight: bold;
+}

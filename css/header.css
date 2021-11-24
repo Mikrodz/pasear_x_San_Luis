@@ -1,0 +1,39 @@
+#id_header_contenedor, .header_contenedor {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.header_contenedor {
+    background: url("../images/background_header_san_luis.jpeg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.texto_header_contenedor {
+    background-color: rgba(231, 252, 255,0.6);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    font-size: 15vw;
+    font-weight: bold;
+}
+.texto_header_contenedor h2 {
+    font-size: 12vw;
+}
+.texto_header_contenedor h1,h2 {
+    color: var(--primario_lila);
+    text-shadow: 0px 2px 2px var(--sombra_lila);
+}
+.intro_boton {
+    background-color: transparent;
+    padding-top: 5em;
+}

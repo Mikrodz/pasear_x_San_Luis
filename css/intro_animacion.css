@@ -1,0 +1,15 @@
+#id_intro {
+    background: var(--grad_azul_celeste);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    vertical-align: inherit;
+}
+#id_intro > img {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 100%;
+}

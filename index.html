@@ -6,20 +6,442 @@
         <link rel="stylesheet" href="css/w3pro.css">
         <link rel="stylesheet" href="css/styles.css">
         <title>Pasear por San Luis</title>
+        <script src="js/nav.js" defer></script>
+        <script src="js/sliders.js" defer></script>
     </head>
     <body>
-        <header id="id_header_contenedor" class="w3-container header_contenedor">
-            <div id="id_intro" class="intro_animancion_container">
-                <img class="intro_nube w3-animate-top" src="images/png/intro_nube.png" alt="caricatura nube grande a lo lejos">
-                <img class="intro_montaña_iz w3-animate-left" src="images/png/intro_montaña_izq.png" alt="caricatura montaña a la izquierda">
-                <img class="intro_montaña_der w3-animate-right" src="images/png/intro_montaña_der.png" alt="caricatura montaña a la derecha">
-            </div>
+        <header id="id_header_contenedor" class="w3-container w3-row header_contenedor">
+            <!--<section id="id_intro" class="intro_animancion_container">-->
+                <!--<img class="intro_nube w3-animate-top" src="images/png/intro_nube.png" alt="caricatura nube grande a lo lejos">-->
+                <!--<img class="intro_montaña_iz w3-animate-left" src="images/png/intro_montaña_izq.png" alt="caricatura montaña a la izquierda">-->
+                <!--<img class="intro_montaña_der w3-animate-right" src="images/png/intro_montaña_der.png" alt="caricatura montaña a la derecha">-->
+            <!--</section>-->
+            <section class="header_contenedor">
+                <div class="texto_header_contenedor">
+                    <h1>San Luis</h1> 
+                    <h2>Argentina</h2>
+                <label for="id_intro_boton">
+                <button id="id_intro_boton" class="w3-button intro_boton" type="menu">
+                    <a href="#inicio">
+                        <img src="images/png/icono_auto+chevronup_color.png" alt="auto con flecha arriba">
+                    </a>
+                </button>
+                </label>
+                </div>
+            </section>
         </header>
-        <main>
-            main content
+        <main id="inicio" class="w3-container w3-row inicio_contenedor">
+            <nav id="id_nav" class="w3-sidebar w3-bar-block nav_contenedor">
+                <button class="w3-button" type="menu" onclick="w3-open()">
+                    <img src="images/png/icono_auto_color+sombra.png" sizes="width:1.5em;">
+                </button>
+                <a class="#" href="#sierras">Sierras</a>
+                <a class="#" href="#cascadas">Cascadas</a>
+                <a class="#" href="#espejos">Espejos de agua</a>
+                <a class="#" href="#salinas">Salinas del Bebedero</a>
+                <a class="#" href="#quijadas">Sierra de las Quijadas</a>
+                <a class="#" href="#playa">Playa de Piscu Yaco</a>
+                <a class="#" href="#Arquitectura">Flora y fauna</a>
+                <a class="#" href="#comida">Comida típica</a>
+                <a class="#" href="#form">Contanos tu experiencia</a>
+            </nav>
+            <section class="w3-container fotos_contenedor">
+                <article id="sierras" class="articulo_sierras">
+                    <h2 class="w3-center w3-panel">Sierras</h2>
+                    <div class="w3-content slider_container">
+
+                        <div class="w3-display-container img_slider">
+                            <img class="w3-image" src="images/sierras/ruta-del-macizo-central.jpg" alt="vista al horizonte desde lo alto de la montaña">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Ruta del Macizo Central</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider">
+                            <img class="w3-image" src="images/sierras/ruta-del-macizo-central_desde_altura.jpg" alt="vista al horizonte desde lo alto de la montaña">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Ruta del Macizo Central</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider">
+                            <img class="w3-image" src="images/sierras/merlo_reserva_hacia_lo_lejano.jpeg" alt="vista al horizonte desde lo alto de la montaña, Merlo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Reserva Merlo</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider">
+                            <img class="w3-image" src="images/sierras/merlo_reserva_hacia_lo_cercano.jpeg" alt="vista al horizonte desde lo alto de la montaña, Merlo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Reserva Merlo</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider">
+                            <img class="w3-image" src="images/sierras/san_luis_horizonte_desde_altura.jpeg" alt="vista al horizonte desde lo alto de la montaña, San Luis">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Sierras de San Luis</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider">
+                            <img class="w3-image" src="images/sierras/montana_nubes_sombra_Merlo.jpg" alt="vista de sombra de nubes sobre las montañas, Merlo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Reserva Merlo</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider">
+                            <img class="w3-image" src="images/sierras/san_luis_hermoso_dia.jpeg" alt="vista del cielo azul y las montañas con arbustos bajo un día luminoso">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Sierras de San Luis</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider">
+                            <img class="w3-image" src="images/sierras/merlo_nubes_y_montana.jpg" alt="árboles, montañas y nubes, Merlo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Merlo</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider">
+                            <img class="w3-image" src="images/sierras/merlo_montana_cielo_despejado.jpg" alt="árboles, montañas y cielo despejado, Merlo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Merlo</h3>
+                        </div>
+                    </div>
+                    
+                    <button class="w3-button w3-display-left chevrons_izq_der" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right chevrons_izq_der" onclick="plusDivs(+1)">&#10095;</button>
+
+                </article>
+
+                <article id="cascadas" class="articulo_cascadas">
+                    <h2 class="w3-center w3-panel">Cascadas</h2>
+                    <div class="w3-content slider_container">
+
+                        <div class="w3-display-container img_slider_cascadas">
+                            <img class="w3-image" src="images/cascadas/arboles_cascada_Salto_Moneda.jpg" alt="vista la cascada El salto de la Moneda">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Salto de la Moneda</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_cascadas">
+                            <img class="w3-image" src="images/cascadas/salto_moneda_San_Luis.jpg" alt="vista la cascada El Salto de la Moneda">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Salto de la Moneda</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_cascadas">
+                            <img class="w3-image" src="images/cascadas/merlo_el_salto_del_tigre.jpg" alt="vista la cascada El salto del Tigre, Merlo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">El salto del Tigre</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_cascadas">
+                            <img class="w3-image" src="images/cascadas/agua_cristalina_Merlo.jpg" alt="agua cristalina, Merlo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Agua cristalina</h3>
+                        </div>
+                    
+                    <button class="w3-button w3-display-left chevrons_izq_der" onclick="plusDivsCasc(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right chevrons_izq_der" onclick="plusDivsCasc(+1)">&#10095;</button>
+
+                </article>
+
+
+                <article id="espejos" class="articulo_espejos">
+                    <h2 class="w3-center w3-panel">Espejos</h2>
+                    <div class="w3-content slider_container">
+
+                        <div class="w3-display-container img_slider_espejos">
+                            <img class="w3-image" src="images/espejos/azul_con_tierra_Dique_La_Florida-Trapiche-SanLuis.jpg" alt="vista al dique La Florida, Trapiche">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Dique La Florida</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_espejos">
+                            <img class="w3-image" src="images/espejos/azul_Dique_La_Florida-Trapiche-SanLuis.jpg" alt="vista al dique La Florida, Trapiche">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Dique La Florida</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_espejos">
+                            <img class="w3-image" src="images/espejos/dique_patitos_La_Toma.jpg" alt="vista al dique con patos nadando">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">La Toma</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_espejos">
+                            <img class="w3-image" src="images/espejos/dique_embalse_nogoli.jpg" alt="vista al embalse Nogoli">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Embalse Nogolí</h3>
+                        </div>
+                    
+                        <div class="w3-display-container img_slider_espejos">
+                            <img class="w3-image" src="images/espejos/espejo_san_luis.jpeg" alt="vista a espejo de agua que refleja nubes, San Luis">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">San Luis</h3>
+                        </div>
+                    
+                        <div class="w3-display-container img_slider_espejos">
+                            <img class="w3-image" src="images/espejos/embalse_La_Florida.jpg" alt="vista del atardecer en el embalse La Florida">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Embalse La Florida</h3>
+                        </div>
+                    
+                    <button class="w3-button w3-display-left chevrons_izq_der" onclick="plusDivsEsp(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right chevrons_izq_der" onclick="plusDivsEsp(+1)">&#10095;</button>
+
+                </article>
+
+                <article id="salinas" class="articulo_salinas">
+                    <h2 class="w3-center w3-panel">Salinas</h2>
+                    <div class="w3-content slider_container">
+
+                        <div class="w3-display-container img_slider_salinas">
+                            <img class="w3-image" src="images/salinas/salinas-del-bebedero2.jpg" alt="vista a las salinas del Bebedero">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Salinas del Bebedero</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_salinas">
+                            <img class="w3-image" src="images/salinas/salinas-del-bebedero.jpg" alt="vista a un montículo de sal">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Salinas del Bebedero</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_salinas">
+                            <img class="w3-image" src="images/salinas/cielo_salinas-del-bebedero.jpg" alt="vista a una montículo de sal">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Salinas del Bebedero</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_salinas">
+                            <img class="w3-image" src="images/salinas/sal_salinas_bebedero.jpg" alt="una pelota de sal">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Salinas del Bebedero</h3>
+                        </div>
+
+                    <button class="w3-button w3-display-left chevrons_izq_der" onclick="plusDivsSal(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right chevrons_izq_der" onclick="plusDivsSal(+1)">&#10095;</button>
+
+                </article>
+
+                <article id="quijadas" class="articulo_quijadas">
+                    <h2 class="w3-center w3-panel">Quijadas</h2>
+                    <div class="w3-content slider_container">
+
+                        <div class="w3-display-container img_slider_quijadas">
+                            <img class="w3-image" src="images/quijadas/quijadas_nube_oscurece_centro.jpg" alt="vista al valle desde altura en el Parque Nacional Sierra de las Quijadas">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Sierra de las Quijadas</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_quijadas">
+                            <img class="w3-image" src="images/quijadas/quijadas_nube_oscurece_izq.jpg" alt="nube oscurece el valle desde la izquierda">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Sierra de las Quijadas</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_quijadas">
+                            <img class="w3-image" src="images/quijadas/quijadas_valle.jpeg" alt="vista a un cañón en Sierra de las Quijadas">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Sierra de las Quijadas</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_quijadas">
+                            <img class="w3-image" src="images/quijadas/quijadas_desde_lejos.jpg" alt="vista a una montaña desde lejos">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Sierra de las Quijadas</h3>
+                        </div>
+
+                    <button class="w3-button w3-display-left chevrons_izq_der" onclick="plusDivsQuij(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right chevrons_izq_der" onclick="plusDivsQuij(+1)">&#10095;</button>
+
+                </article>
+
+                <article id="playa" class="articulo_playa">
+                    <h2 class="w3-center w3-panel">Playa de Piscu Yaco</h2>
+                    <div class="w3-content slider_container">
+
+                        <div class="w3-display-container img_slider_playa">
+                            <img class="w3-image" src="images/playa/Piscu_Yaco.jpg" alt="vista de la playa, tranquila, desde la orilla">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Piscu Yaco</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_playa">
+                            <img class="w3-image" src="images/playa/Piscu_Yaco_lejos.jpg" alt="vista a la playa desde lejos">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Piscu Yaco</h3>
+                        </div>
+
+                    <button class="w3-button w3-display-left chevrons_izq_der" onclick="plusDivsPlaya(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right chevrons_izq_der" onclick="plusDivsPlaya(+1)">&#10095;</button>
+
+                </article>
+
+                
+                <article id="arquitectura" class="articulo_arquitectura">
+                    <h2 class="w3-center w3-panel">Arquitectura</h2>
+                    <div class="w3-content slider_container">
+
+                        <div class="w3-display-container img_slider_arqui">
+                            <img class="w3-image" src="images/arquitectura/frente_luminoso_monasterio_monjas_benedictinas.jpg" alt="vista al monasterio de las monjas Benedictinas">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Monasterio de las monjas Benedictinas</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_arqui">
+                            <img class="w3-image" src="images/arquitectura/monasterio_monjas_benedictinas.jpg" alt="vista al monasterio desde otro ángulo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Monasterio de las monjas Benedictinas</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_arqui">
+                            <img class="w3-image" src="images/arquitectura/Museo_minerologico_La_Carolina.jpg" alt="vista a la entrada al Museo Minerológico, La Carolina">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Museo Minerológico La Carolina</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_arqui">
+                            <img class="w3-image" src="images/arquitectura/casas_La_Carolina.jpeg" alt="vista a las casas de piedra en La Carolina">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">La Carolina</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_arqui">
+                            <img class="w3-image" src="images/arquitectura/casita_campana_La_Carolina.jpeg" alt="vista a una casa de piedra con una campana y flores">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">La Carolina</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_arqui">
+                            <img class="w3-image" src="images/arquitectura/esquina_La_Carolina.jpeg" alt="vista a una casa de piedra con puerta de madera">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">La Carolina</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_arqui">
+                            <img class="w3-image" src="images/arquitectura/estadio_La_Pedrera.jpeg" alt="vista al nuevo estadio, La Pedrera">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Estadio La Pedrera</h3>
+                        </div>
+
+                    <button class="w3-button w3-display-left chevrons_izq_der" onclick="plusDivsArq(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right chevrons_izq_der" onclick="plusDivsArq(+1)">&#10095;</button>
+
+                </article>
+
+                <article id="flora" class="articulo_flora">
+                    <h2 class="w3-center w3-panel">Flora y fauna</h2>
+                    <div class="w3-content slider_container">
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/flor_retama.jpg" alt="vista a la flor de Retama">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Flor de Retama</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/algarrobo.jpeg" alt="vista al árbol de Algarrobo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Árbol de Algarrobo</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/flor_tintitaco.jpg" alt="vista a la flor de Tintitaco con espinas">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Flor de Tintitaco</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/quebracho.jpg" alt="vista al árbol de Quebracho">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Árbol de Quebracho</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/piquillin.jpg" alt="vista al fruto de Piquillín">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Fruto de Piquillín</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/jarilla.jpeg" alt="vista la flor de Jarilla">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Flor de Jarilla</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/caballos2_merlo.jpg" alt="vista a dos caballos salvajes pastando en Merlo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Caballos salvajes</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/caballos_jugando_merlo.jpg" alt="vista a caballos salvajes jugando">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Caballos salvajes</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/caballos_salvajes_Merlo.jpg" alt="vista a dos caballos salvajes pastando en Merlo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Caballos salvajes</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/jabalies.jpeg" alt="vista a una manada de jabalíes salvajes">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Jabalíes salvajes</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/liebres.jpg" alt="vista a liebres en el campo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Liebres</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/Puma.jpg" alt="vista a un puma">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Puma andino</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/tortuga_tierra.jpg" alt="vista a una tortuga de tierra">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Tortuga de tierra</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/zorro.jpg" alt="vista a un zorro">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Zorro</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/carancho.jpg" alt="vista a un carancho">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Carancho</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/halcon_peregrino_parado.jpeg" alt="vista a un halcón peregrino parado en el campo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Halcón peregrino</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/Halcon-peregrino_desde_abajo.jpg" alt="vista a un halcón peregrino en vuelo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Halcón peregrino</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/condor-andino.jpg" alt="vista a un cóndor desplegando las alas">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Cóndor andino</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/condor-andino-lomo.jpg" alt="vista al lomo del cóndor desplegando las alas">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Cóndor andino</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_flora">
+                            <img class="w3-image" src="images/flora+fauna/condor_planeando.jpeg" alt="vista a un cóndor planeando">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Cóndor andino</h3>
+                        </div>
+
+
+                    <button class="w3-button w3-display-left chevrons_izq_der" onclick="plusDivsFlora(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right chevrons_izq_der" onclick="plusDivsFlora(+1)">&#10095;</button>
+
+                </article>
+
+                <article id="comida" class="articulo_comida">
+                    <h2 class="w3-center w3-panel">Comida típica</h2>
+                    <div class="w3-content slider_container">
+
+                        <div class="w3-display-container img_slider_comida">
+                            <img class="w3-image" src="images/comida/locro.jpeg" alt="vista a una olla de locro">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Locro</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_comida">
+                            <img class="w3-image" src="images/comida/corderito.jpg" alt="vista a un corderito a la parrilla">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Corderito a la parrila</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_comida">
+                            <img class="w3-image" src="images/comida/humita.jpg" alt="vista a una olla de humita">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Humita</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_comida">
+                            <img class="w3-image" src="images/comida/chivito.jpg" alt="vista a un chivito a las brasas">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Chivito</h3>
+                        </div>
+
+                        <div class="w3-display-container img_slider_comida">
+                            <img class="w3-image" src="images/comida/fiesta_del_chivo.jpg" alt="fiesta del chivo">
+                            <h3 class="w3-display-bottomleft w3-large w3-container w3-padding-16">Fiesta del Chivo</h3>
+                        </div>
+
+                    <button class="w3-button w3-display-left chevrons_izq_der" onclick="plusDivsComida(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right chevrons_izq_der" onclick="plusDivsComida(+1)">&#10095;</button>
+
+                </article>
+            </section>
+            <section class="w3-container form_contenedor">
+                
+            </section>
         </main>
-        <footer>
-            footer content
+        <footer id="footer">
+
         </footer>
     </body>
 </html>
