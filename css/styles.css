@@ -6,6 +6,7 @@
     --grad_blanco_celeste: linear-gradient(to top, #e7fcff, #effcff, #f6fcff, #fcfdff, #ffffff);
     --grad_celeste_blanco: linear-gradient(to bottom, #e7fcff, #effcff, #f6fcff, #fcfdff, #ffffff);;
     --grad_blanco_lila: linear-gradient(to bottom, #ffffff, #f6f3ff, #eee6ff, #e8d9ff, #e3ccff);
+    --grad_lila_blanco: linear-gradient(to top, #ffffff, #f6f3ff, #eee6ff, #e8d9ff, #e3ccff);
     --primario_celeste: #E7FCFF;
     --primario_verde: #79B5BD;
     --primario_lila: #D0C4F6;
@@ -24,3 +25,6 @@ a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
+section.form_contenedor,footer,header {
+    z-index: 3;
+} 

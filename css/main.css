@@ -13,6 +13,9 @@ main {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /*grid-template-rows: repeat(3, minmax(1fr, 270px));*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
 }
 .img_slider {
     display: none;
@@ -28,8 +31,6 @@ main {
     background: rgba(121, 181, 189, 0.5);
     text-shadow: 0.8px 0.8px 1px #193038;
     position: absolute;
-    /*border-radius: 50%;*/
-    /*padding: 0.5em;*/
 }
 article {
     position: relative;
@@ -40,7 +41,6 @@ article h2 {
 }
 /*.w3-image {*/
     /*height: inherit;*/
-    /*overflow: hidden;*/
     /*object-fit: cover;*/
     /*object-position: center top;*/
 /*}*/
@@ -107,9 +107,8 @@ main nav {
 }
 
 /*form*/
-
 svg {
-	fill: rgb(242, 242, 242);
+    fill: #b3b3b3;
 	height: 2rem;
 	width: 2rem;
 }
@@ -144,4 +143,48 @@ input[class="mucho"]:hover + svg,
 input[class="mucho"]:checked + svg,
 input[class="mucho"]:focus + svg {
 	fill: rgb(239, 42, 16);
+}
+.form_contenedor h2, h3 {
+    color: #947aeb;
+    text-shadow: none;
+}
+.form_contenedor {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.formulario {
+    padding: 2em;
+    background: var(--grad_blanco_lila);
+    z-index: 3;
+}
+/*#enviar {*/
+    /*position: absolute;*/
+/*}*/
+input[type="submit"] {
+    position: absolute;
+    opacity: 0;
+}
+input[type="submit"] + svg {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.boton_enviar_form {
+    /*background: var(--sombra_lila);*/
+    background-color: #947aeb;
+    font-size: 1.5em;
+    width: fit-content;
+    padding: 0.8em;
+    margin: 1.5em;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    justify-self: flex-end;
+}
+i {
+    padding-left: 0.5em;
+}
+label>input:hover {
+    cursor: pointer;
 }
