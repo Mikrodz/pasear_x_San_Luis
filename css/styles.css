@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
 @import url('header.css');
 @import url('main.css');
+@import url('footer.css');
 :root {
     --grad_azul_celeste: linear-gradient(to bottom, #33bbff, #67cdfc, #93defa, #beeefa, #e7fcff);
     --grad_blanco_celeste: linear-gradient(to top, #e7fcff, #effcff, #f6fcff, #fcfdff, #ffffff);
@@ -16,15 +17,10 @@
 * {
     font-family: 'Spartan', sans-serif;
 }
-/*html {*/
-    /*height: 100%;*/
-    /*padding: 0;*/
-    /*margin: 0;*/
-/*}*/
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
-section.form_contenedor,footer,header {
+header {
     z-index: 3;
 } 

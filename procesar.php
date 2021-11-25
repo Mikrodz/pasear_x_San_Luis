@@ -4,8 +4,8 @@
 $legible = $_POST['legible'];
 $informativa = $_POST['informativa'];
 $organizada = $_POST['organizada'];
-$diseño = $_POST['diseño'];
-$navegación = $_POST['navegación'];
+$diseno = $_POST['diseño'];
+$navegacion = $_POST['navegación'];
 ?>
     </body>
-    </html>
+</html>

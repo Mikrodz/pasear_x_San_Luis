@@ -1,0 +1,16 @@
+.footer_contenedor {
+    background: url("../images/footer_embalse_La_Florida.jpg") fixed repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5em;
+    grid-gap: 5em;
+    justify-content: space-around;
+    color: var(--primario_celeste);
+}
+.copyleft {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 5vh;
+    font-size: 0.8em;
+}

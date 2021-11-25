@@ -168,3 +168,4 @@ function showDivsComida(n) {
   }
   x[slideIndexComida-1].style.display = "block";
 }
+
