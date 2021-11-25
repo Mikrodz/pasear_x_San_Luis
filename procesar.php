@@ -1,7 +1,11 @@
+<html>
+    <body>
 <?php
-$legible = $_GET['legible'];
-$informativa = $_GET['informativa'];
-$organizada = $_GET['organizada'];
-$diseño = $_GET['diseño'];
-$navegación = $_GET['navegación'];
+$legible = $_POST['legible'];
+$informativa = $_POST['informativa'];
+$organizada = $_POST['organizada'];
+$diseño = $_POST['diseño'];
+$navegación = $_POST['navegación'];
 ?>
+    </body>
+    </html>

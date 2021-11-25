@@ -61,10 +61,10 @@ main nav {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     transform: scale(1, 0);
     transform-origin: bottom;
-    transition: transform 600ms ease-in-out;
+    transition: transform 300ms ease-in-out;
 }
 .nav_menu {
     position: fixed;
@@ -79,7 +79,7 @@ main nav {
     padding: 0.5em;
     opacity: 0; 
     width: 100%;
-    transition: opacity 10ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
 }
 .lista_nav_menu a:hover {
     color: var(--sombra_lila);
@@ -156,11 +156,8 @@ input[class="mucho"]:focus + svg {
 .formulario {
     padding: 2em;
     background: var(--grad_blanco_lila);
-    z-index: 3;
+    /*z-index: 3;*/
 }
-/*#enviar {*/
-    /*position: absolute;*/
-/*}*/
 input[type="submit"] {
     position: absolute;
     opacity: 0;
@@ -170,7 +167,6 @@ input[type="submit"] + svg {
     transition: all 0.2s;
 }
 .boton_enviar_form {
-    /*background: var(--sombra_lila);*/
     background-color: #947aeb;
     font-size: 1.5em;
     width: fit-content;
@@ -179,12 +175,12 @@ input[type="submit"] + svg {
     border-radius: 5%;
     display: flex;
     align-items: center;
-    justify-items: space-between;
-    justify-self: flex-end;
+    /*justify-items: space-between;*/
+    /*justify-self: flex-end;*/
 }
 i {
     padding-left: 0.5em;
 }
-label>input:hover {
+.boton_enviar_form>input:hover {
     cursor: pointer;
 }
