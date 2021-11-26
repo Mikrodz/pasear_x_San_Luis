@@ -14,10 +14,8 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 }
 .w3-display-bottomleft {
-    color: var(--sombra_verde);
-    font-weight: bold;
-    background: rgba(204, 249, 255, 0.5);
-    text-shadow: 0px -1px 1px var(--primario_verde);
+    color: #8364e8;
+    background: rgba(204, 249, 255, 0.8);
 }
 .chevrons_izq_der {
     color: var(--sombra_verde);
@@ -30,7 +28,8 @@ article {
 }
 article h2 {
     font-weight: bold;
-    text-shadow: 0px 1px 1px var(--sombra_lila);
+    color: #8364e8;
+    text-shadow: none;
 }
 
 /*barra de navegación*/
